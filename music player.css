@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+    color: #f4eeee;
+   
+    
+  }
+  
+  html,body {
+    background-color: #000;
+    overflow: hidden;
+    min-height: 100%;
+   
+   
+    width: 100%;
+  }
+  #main{
+    
+    
+    
+    min-width: 100%;
+    padding: 1em;
+    padding-top: 0;
+    overflow: hidden;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+   
+  }
+
+  #main video{
+    height: 100vh;
+width: 100%;
+-o-object-fit:fill;
+ object-fit:fill;
+position: fixed;
+z-index: 0;
+  }
+ 
+  
+  
+#img1{
+  
+    height: 4em;
+    width: 4em;
+    padding:  1%;
+    padding-top: 1%;
+}
+#nav{
+
+    min-height: 5%;
+   width:  100%;
+    background-color: #121111;
+    display: flex;
+}
+#nav h4{
+    font-size: 1.5em;
+  
+    padding: 3%;
+    
+}
+#nav h4 a{
+    text-decoration: none;
+    
+    
+  
+    
+    
+}
+#container1{
+ z-index: 1;
+  
+ 
+  position: relative;
+  max-height: 80vh;
+  padding: 1rem 0;
+
+}
+#musiccontainer{
+  z-index: 1;
+  background-color: #00000082;
+  width: 50%;
+  position: relative;
+  max-height: 50vh;
+  padding: 1rem 0;
+  overflow-y: auto; 
+}
+
+#bottom{
+  margin: 5%;
+  border-radius: 2rem ;
+  min-width:90vw;;
+  position:relative;
+  height: 5rem;
+  background-color: #2d2e2d;
+  bottom: 0%;
+  display: flex;
+ 
+ align-items:center;
+  justify-content: center;
+  color: aliceblue;
+  flex-direction: column-reverse;
+}
+.icons{
+  
+  
+  cursor: pointer ;
+ 
+}
+#progressbar{
+  z-index: 1;
+  object-fit: cover;
+  align-items: center;
+  width: 80vw;
+ 
+}
+#progressbar:hover{
+  cursor: pointer;
+
+}
+
+.songitem{
+  z-index: 1;
+  background:linear-gradient(to right,#f0f2f0ee,#b3b4b3de,#767676,#595958);
+ 
+  
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 1em;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
+  width: 90%;
+  height: 2rem;
+ 
+
+}
+.songitem i{
+  padding: 0 0.5rem;
+  cursor: pointer;
+  color: #020202;
+  
+  
+  
+}
+
+.secret{cursor: pointer;
+  color: #000;
+  padding: 0 0;
+  
+  
+  
+  
+  
+  
+}
+.secret:hover{
+  color: #f5f1f1;
+  
+  
+  
+}
+
+
+#musiccontainer::-webkit-scrollbar {
+  width: 1.5vw; /* Set the width of the scrollbar */
+  height: 1vh;
+}
+
+#musiccontainer::-webkit-scrollbar-thumb {
+  background-color: #9d9c9c; /* Color of the scrollbar thumb */
+  border-radius: 4rem; /* Rounded corners for the thumb */
+}
+
+#musiccontainer::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color when hovering over the thumb */
+}
+
+#musiccontainer::-webkit-scrollbar-track {
+   /* Color of the scrollbar track */
+  background-color: transparent;
+}
+
+

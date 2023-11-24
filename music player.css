@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+   
     box-sizing: border-box;
     font-family: "montserrat";
     color: #f4eeee;
@@ -11,7 +11,7 @@
   html,body {
     background-color: #000;
     overflow: hidden;
-    min-height: 100%;
+    
    
    
     width: 100%;
@@ -20,30 +20,31 @@
     
     
     
-    min-width: 100%;
+    max-width: 90%;
     padding: 1em;
     padding-top: 0;
     overflow: hidden;
     padding: 2rem 1rem;
-    min-height: 100vh;
-   
+    
   }
 
-  #main video{
-    height: 100vh;
-width: 100%;
--o-object-fit:fill;
- object-fit:fill;
-position: fixed;
-z-index: 0;
+   #backgroundGif{
+   
+      width: 100%; /* Adjust the width as needed */
+      height: auto; /* This will maintain the aspect ratio */
+      min-height: 100%; /* Limit the maximum height */
+      object-fit:cover; /* Cover the container while maintaining the aspect ratio */
+      position: fixed;
+      z-index: 0;
+    
   }
  
   
   
 #img1{
   
-    height: 4em;
-    width: 4em;
+    height: 8%;
+    width: 8%;
     padding:  1%;
     padding-top: 1%;
 }
@@ -55,7 +56,7 @@ z-index: 0;
     display: flex;
 }
 #nav h4{
-    font-size: 1.5em;
+    font-size: 100%;
   
     padding: 3%;
     
@@ -69,34 +70,44 @@ z-index: 0;
     
 }
 #container1{
- z-index: 1;
-  
+  z-index: 1;
  
+  
   position: relative;
   max-height: 80vh;
   padding: 1rem 0;
 
 }
 #musiccontainer{
+  
   z-index: 1;
   background-color: #00000082;
-  width: 50%;
+  width: 50vw;
   position: relative;
   max-height: 50vh;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   overflow-y: auto; 
 }
-
+#startRecognitionButton{
+  margin: 1% 0;
+  
+  color: #000;
+  background:linear-gradient(to right,#f0f2f0ee,#b3b4b3de,#767676,#595958);
+}
+#startRecognitionButton:hover{
+  cursor: pointer;
+}
 #bottom{
-  margin: 5%;
+  margin: 2% 8%;
+  padding: 0 2%;
   border-radius: 2rem ;
-  min-width:90vw;;
+  width:90%;
   position:relative;
-  height: 5rem;
+  height: 3%;
   background-color: #2d2e2d;
-  bottom: 0%;
-  display: flex;
  
+  display: flex;
+  z-index: 2;
  align-items:center;
   justify-content: center;
   color: aliceblue;
@@ -104,15 +115,16 @@ z-index: 0;
 }
 .icons{
   
-  
+  padding: 0% 2%;
   cursor: pointer ;
  
 }
 #progressbar{
+  padding: 1% 0;
   z-index: 1;
   object-fit: cover;
   align-items: center;
-  width: 80vw;
+  width: 90%;
  
 }
 #progressbar:hover{
@@ -139,6 +151,9 @@ z-index: 0;
 
 }
 .songitem i{
+  white-space: nowrap; 
+  overflow: hidden;    
+  text-overflow: ellipsis;
   padding: 0 0.5rem;
   cursor: pointer;
   color: #020202;
@@ -150,7 +165,9 @@ z-index: 0;
 .secret{cursor: pointer;
   color: #000;
   padding: 0 0;
-  
+  white-space: nowrap;  
+  overflow: hidden;    
+  text-overflow: ellipsis;
   
   
   
@@ -183,5 +200,3 @@ z-index: 0;
    /* Color of the scrollbar track */
   background-color: transparent;
 }
-
-

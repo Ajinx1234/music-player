@@ -1,12 +1,16 @@
-# music-player aplication with user friendly UI,conatins many songs
+🎵 Music Player
+A music player application with a user-friendly UI that contains multiple songs.
 
-how to run:-
+🚀 How to Run
+1️⃣ Download the Code
 
-1.create folder with any name,store the html,css and js files it that folder.
+Clone this repository or download the HTML, CSS, and JavaScript files into a folder.
+2️⃣ Song Links (No Download Required)
 
-2.from the given Google drive link acess the songs and download them(make sure you don't change their names) also download the 
-  logo img from the drive..
+The songs are now hosted on AWS S3 instead of Google Drive.
+The player will stream the songs directly from the S3 bucket.
+Make sure you have an active internet connection.
+3️⃣ Run the Music Player
 
-3.create a folder named "songs" inside the first folder(where you have stored your html css and js files) and store the downloaded songs anf the logo image in that “songs” folder.
-
-4.Open the code in vs code or any other software and run.
+Open the index.html file in your browser, or
+Open the project in VS Code and use Live Server to preview it.
